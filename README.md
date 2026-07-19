@@ -4,7 +4,7 @@
 
 Most perception engineers come from pure ML. I came through vehicles: suspension kinematics, load cases, and Formula Student first, then ML on top. That combination is the point — I design models against the constraints they actually ship under: a latency budget, a memory ceiling, a false-positive rate someone has to sign off on.
 
-Currently: Master's thesis at **Robert Bosch GmbH** on UWB-radar gesture detection — owned end to end, from data campaign and labeling infrastructure through model design to real-time ARM Cortex deployment and vehicle validation. M.Eng in **Automated Driving and Vehicle Safety**, TH Ingolstadt.
+Currently: at **Robert Bosch GmbH** on UWB-radar gesture detection — owned end to end, from data campaign and labeling infrastructure through model design to real-time ARM Cortex deployment and vehicle validation. M.Eng in **Automated Driving and Vehicle Safety**, TH Ingolstadt.
 
 📍 Stuttgart, Germany · German C1 / English C1 · Open to perception, sensor-fusion, and ADAS roles
 
