@@ -22,13 +22,13 @@ Three things I keep coming back to:
 
 ---
 
-## 🚧 Building: RadarStack
+% ## 🚧 Building: RadarStack
+%
+% An open-source radar-first 3D perception stack — 4D-radar detection, multi-object tracking, camera-radar BEV fusion, INT8 edge deployment, closed-loop validation, and a documented SOTIF safety case. Trained on public benchmarks (nuScenes, View-of-Delft, K-Radar), validated on a self-built sensor rig.
 
-An open-source radar-first 3D perception stack — 4D-radar detection, multi-object tracking, camera-radar BEV fusion, INT8 edge deployment, closed-loop validation, and a documented SOTIF safety case. Trained on public benchmarks (nuScenes, View-of-Delft, K-Radar), validated on a self-built sensor rig.
+% Shipping in versioned releases, one write-up per release. *Public at v0.1 — watch this space.*
 
-Shipping in versioned releases, one write-up per release. *Public at v0.1 — watch this space.*
-
----
+% ---
 
 ## Selected work
 
