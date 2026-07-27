@@ -12,7 +12,7 @@ Currently: at **Robert Bosch GmbH** on UWB-radar gesture detection — owned end
 
 ## What I work on
 
-**Radar-first 3D perception.** Camera perception has tens of thousands of practitioners; radar perception has a few hundred. 4D imaging radar is the cheap all-weather sensor every OEM is betting on, and almost nobody works the full stack from raw ADC through detection to a deployed, validated function. That's the gap I'm building into.
+**Radar-first perception.** Camera perception has tens of thousands of practitioners; radar perception has a few hundred. 4D imaging radar is the cheap all-weather sensor every OEM is betting on, and almost nobody works the full stack from raw ADC through detection to a deployed, validated function. That's the gap I'm building into.
 
 Three things I keep coming back to:
 
@@ -21,14 +21,6 @@ Three things I keep coming back to:
 - **False positives are a product risk, not a metric** — how a function fails decides whether it ships.
 
 ---
-
-% ## 🚧 Building: RadarStack
-%
-% An open-source radar-first 3D perception stack — 4D-radar detection, multi-object tracking, camera-radar BEV fusion, INT8 edge deployment, closed-loop validation, and a documented SOTIF safety case. Trained on public benchmarks (nuScenes, View-of-Delft, K-Radar), validated on a self-built sensor rig.
-
-% Shipping in versioned releases, one write-up per release. *Public at v0.1 — watch this space.*
-
-% ---
 
 ## Selected work
 
