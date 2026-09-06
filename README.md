@@ -1,24 +1,28 @@
 # Darshak Panseriya
 
-**Perception engineer — radar and vision ML that runs on real hardware.**
+**Engineer for autonomous systems and physical AI — perception, world models, and end-to-end driving that run on real hardware.**
 
 Most perception engineers come from pure ML. I came through vehicles: suspension kinematics, load cases, and Formula Student first, then ML on top. That combination is the point — I design models against the constraints they actually ship under: a latency budget, a memory ceiling, a false-positive rate someone has to sign off on.
 
 Currently: at **Robert Bosch GmbH** on UWB-radar gesture detection — owned end to end, from data campaign and labeling infrastructure through model design to real-time ARM Cortex deployment and vehicle validation. M.Eng in **Automated Driving and Vehicle Safety**, TH Ingolstadt.
 
-📍 Stuttgart, Germany · German C1 / English C1 · Open to perception, sensor-fusion, and ADAS roles
+📍 Stuttgart, Germany · German C1 / English C1 · Open to perception, sensor-fusion, end-to-end driving, and physical-AI roles
 
 ---
 
 ## What I work on
 
-**Radar-first perception.** Camera perception has tens of thousands of practitioners; radar perception has a few hundred. 4D imaging radar is the cheap all-weather sensor every OEM is betting on, and almost nobody works the full stack from raw ADC through detection to a deployed, validated function. That's the gap I'm building into.
+**The full autonomy path** — sensing, perception, prediction, planning — with two convictions: the field's destination is learned, end-to-end systems (world models, trajectory generation, unified perception-to-planning), and none of it counts until it survives real sensors, real latency budgets, and a safety argument.
+
+My unfair edge inside that path is **radar**: camera perception has tens of thousands of practitioners, radar a few hundred, and almost nobody works it from the raw ADC cube upward. One pillar of the portfolio, not its boundary.
 
 Three things I keep coming back to:
 
 - **Hybrid intelligence** — ML alone is not trustworthy in ambiguous motion. Deterministic physics and temporal logic wrapped around a model beats either half alone.
 - **The deployment constraint is the design constraint** — a model that misses the latency budget is not a model, it's a research artifact.
 - **False positives are a product risk, not a metric** — how a function fails decides whether it ships.
+
+**In development:** **AutonomyStack** — an open autonomous-driving stack (multi-sensor perception, tracking, BEV fusion, end-to-end planner on NAVSIM, data engine, SOTIF safety case), shipping in public releases — and a trajectory-diffusion world model for generating hard driving scenarios (STRIVE/CTG lane).
 
 ---
 
