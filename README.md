@@ -27,7 +27,7 @@ A Python and PyQt tool for live radar signal analysis that took per-measurement 
 **[Camera–radar fusion](https://www.darshakpanseriya.com/work/sensor-fusion-fraunhofer)** · Fraunhofer IVI · [source code](https://github.com/DkPanseriya/Sensor-Data-Fusion)\
 Led a student team of four on traffic perception from infrastructure-mounted sensors: camera object detection, association of detections with radar clusters, and evaluation.
 
-**[Perception validation for Formula Student Driverless](https://www.darshakpanseriya.com/work/perception-validation-sre)** · Schanzer Racing Electric\
+**[Perception validation for Formula Student Driverless](https://www.darshakpanseriya.com/work/perception-validation-sre)** · Schanzer Racing Electric · [source code](https://github.com/DkPanseriya/Cone-Pose-Validation)\
 Validated a cone-keypoint detector on ground truth built from segmentation masks that already existed. About 100 hours of manual labeling avoided.
 
 ### Vehicle engineering
