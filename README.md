@@ -1,75 +1,56 @@
 # Darshak Panseriya
 
-**Engineer for autonomous systems and physical AI — perception, world models, and end-to-end driving that run on real hardware.**
+**Perception, sensor fusion and machine learning for autonomous systems and physical AI**
 
-Most perception engineers come from pure ML. I came through vehicles: suspension kinematics, load cases, and Formula Student first, then ML on top. That combination is the point — I design models against the constraints they actually ship under: a latency budget, a memory ceiling, a false-positive rate someone has to sign off on.
+I build sensing functions that have to work on real hardware: from raw radar and camera data through signal processing and machine learning to validation in the vehicle. I came to this from vehicle engineering, so I treat a model as one part of a system.
 
-Currently: at **Robert Bosch GmbH** on UWB-radar gesture detection — owned end to end, from data campaign and labeling infrastructure through model design to real-time ARM Cortex deployment and vehicle validation. M.Eng in **Automated Driving and Vehicle Safety**, TH Ingolstadt.
+Stuttgart, Germany · M.Eng. Automated Driving and Vehicle Safety
 
-📍 Stuttgart, Germany · German C1 / English C1 · Open to perception, sensor-fusion, end-to-end driving, and physical-AI roles
-
----
-
-## What I work on
-
-**The full autonomy path** — sensing, perception, prediction, planning — with two convictions: the field's destination is learned, end-to-end systems (world models, trajectory generation, unified perception-to-planning), and none of it counts until it survives real sensors, real latency budgets, and a safety argument.
-
-My unfair edge inside that path is **radar**: camera perception has tens of thousands of practitioners, radar a few hundred, and almost nobody works it from the raw ADC cube upward. One pillar of the portfolio, not its boundary.
-
-Three things I keep coming back to:
-
-- **Hybrid intelligence** — ML alone is not trustworthy in ambiguous motion. Deterministic physics and temporal logic wrapped around a model beats either half alone.
-- **The deployment constraint is the design constraint** — a model that misses the latency budget is not a model, it's a research artifact.
-- **False positives are a product risk, not a metric** — how a function fails decides whether it ships.
-
-**In development:** **AutonomyStack** — an open autonomous-driving stack (multi-sensor perception, tracking, BEV fusion, end-to-end planner on NAVSIM, data engine, SOTIF safety case), shipping in public releases — and a trajectory-diffusion world model for generating hard driving scenarios (STRIVE/CTG lane).
+[Portfolio](https://www.darshakpanseriya.com) · [LinkedIn](https://linkedin.com/in/dkpanseriya) · [Email](mailto:dkpanseriya99@gmail.com)
 
 ---
 
 ## Selected work
 
-| Project | What it does | Stack |
-|---|---|---|
-| **[Sensor-Data-Fusion](https://github.com/DkPanseriya/Sensor-Data-Fusion)** | Camera-radar fusion for traffic perception: radar point-cloud clustering with a from-scratch range-adaptive DBSCAN, YOLO detection, coordinate transforms, and cluster-to-box association visualized on image and ground planes. | Python, PyTorch, Ultralytics, OpenCV |
-| **[Cone-Detection](https://github.com/DkPanseriya/Cone-Detection)** | YOLOv2 cone detector for Formula Student Driverless — labeling through training to real-time video validation. Solution to MathWorks Challenge #248. | MATLAB, Simulink, Computer Vision Toolbox |
+Titles link to case studies. Public code is marked.
+
+### Radar sensing and machine learning
+
+**[Kick detection with UWB radar](https://www.darshakpanseriya.com/work/kick-detection)** · Robert Bosch GmbH\
+Hands-free tailgate opening, sensed by the car's existing digital-key radar. Owned the technical side from first data to a passed OEM design review in under 7 months: data campaigns, signal processing, model design, evaluation, and validation in a customer vehicle. The complete function runs in about 100 KB of RAM on a microcontroller.
+
+**[Real-time UWB radar analysis tool](https://www.darshakpanseriya.com/work/uwb-radar-internship)** · Robert Bosch GmbH\
+A Python and PyQt tool for live radar signal analysis that took per-measurement analysis from 1–2 hours to seconds, and became the team's standard tool.
+
+### Camera perception and sensor fusion
+
+**[Camera–radar fusion](https://www.darshakpanseriya.com/work/sensor-fusion-fraunhofer)** · Fraunhofer IVI · [source code](https://github.com/DkPanseriya/Sensor-Data-Fusion)\
+Led a student team of four on traffic perception from infrastructure-mounted sensors: camera object detection, association of detections with radar clusters, and evaluation.
+
+**[Perception validation for Formula Student Driverless](https://www.darshakpanseriya.com/work/perception-validation-sre)** · Schanzer Racing Electric\
+Validated a cone-keypoint detector on ground truth built from segmentation masks that already existed. About 100 hours of manual labeling avoided.
+
+### Vehicle engineering
+
+**[Micromobility vehicle platform](https://www.darshakpanseriya.com/work/micromobility-platform)** · Sole platform engineer\
+A four-wheel vehicle under 50 kg, from concept to prototype: architecture, suspension kinematics, dynamics, component design and FEA.
+
+**[Formula Student vehicle dynamics](https://www.darshakpanseriya.com/work/gtu-motorsports)** · GTU Motorsports\
+Vehicle dynamics for a car that finished 3rd overall nationally, 1st in Acceleration and Endurance.
 
 ---
 
-## Experience
+## Technical stack
 
-**Robert Bosch GmbH** — Master Thesis, ML-based Kick Detection with UWB Radar · *Oct 2025 – present*
-End-to-end ownership: data acquisition, labeling pipelines, model and algorithm design, integration, vehicle validation. Radar spatio-temporal features (CIR preprocessing, range gating, Doppler, STFT). Compact architectures under embedded constraints. Hybrid physics + ML post-processing cutting **>90% of raw ML false positives** in real-world scenarios, at **<100 ms latency on ARM Cortex**.
+- **ML and computer vision:** Python, PyTorch, TensorFlow, Keras, Ultralytics, OpenCV, scikit-learn
+- **Data and visualization:** NumPy, Pandas, Matplotlib, Plotly, Folium, PyQt
+- **Automotive and signal processing:** MATLAB, Simulink, CANoe, CAPL
+- **Engineering and tooling:** Git, Docker, SolidWorks, ANSYS, Adams
 
-**Robert Bosch GmbH** — UWB Radar Engineering Intern · *Feb – Sep 2025*
-Real-time CIR analysis tool (Python/PyQt). Radar evaluations for child-presence-detection, kick, and intrusion functions. CANoe/CAPL measurement automation, ingestion pipeline for 100k+ measurement files, and an automated + human-in-the-loop labeling framework that cut manual cleanup **>80%**.
+## Beyond automotive
 
-**Schanzer Racing Electric** — Perception System Engineer · *Oct 2024 – Apr 2025*
-Real-time perception pipeline for autonomous racing. Automated YOLOv8-pose validation (AP/IoU, keypoint RMSE) saving **~100 hours of manual labeling**; class-wise confusion analysis surfacing 25–35% recall losses.
-
-**Fraunhofer IVI** — Sensor Data Fusion · *Mar – Jun 2024*
-Camera-radar fusion for traffic perception. YOLOv8 training with dataset balancing; detection and association validation metrics.
-
-**Stealth Startup (Micromobility)** — Vehicle Platform Design Engineer · *Aug 2022 – Aug 2024*
-Sole platform engineer: architecture, suspension, brakes, steering, drivetrain. Kinematics and dynamics analysis, FEA, production drawings and BOMs — concept through prototype-ready release.
-
-**GTU Motorsports** — Vehicle Dynamics Engineer · *Apr 2019 – Mar 2021*
-Suspension and vehicle-dynamics design, kinematics models, tire-data analysis. Formula Bharat: **3rd place 2020, 5th place 2021**.
+**[DeckHQ](https://github.com/DkPanseriya/deckhq)** · A local tool that keeps every Claude Code and Codex session in one place.
 
 ---
 
-## Stack
-
-**Perception & ML** — PyTorch · TensorFlow / Keras · Ultralytics YOLO · OpenCV · scikit-learn
-**Sensors & signal** — UWB radar · CIR / STFT / Doppler · range gating · CANoe · CAPL · MATLAB / Simulink
-**Deployment** — quantization · latency profiling · ARM Cortex · ONNX · Docker
-**Data** — NumPy · Pandas · labeling automation · PyQt · Plotly
-**Vehicle engineering** — SolidWorks · ANSYS · Adams · vehicle kinematics & dynamics · FEA
-
----
-
-## Reach me
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/dkpanseriya)
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:dkpanseriya99@gmail.com)
-
-Open to conversations about perception, sensor fusion, radar, and anything that has to work outside a benchmark.
+German C1 · English C1
